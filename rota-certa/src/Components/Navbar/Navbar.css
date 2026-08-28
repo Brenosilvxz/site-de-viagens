@@ -12,11 +12,15 @@
   top: 0;
   left: 0;
   z-index: 100;
+
   background: transparent;
 
+  box-sizing: border-box;
 }
 
-/* Logo */
+/* =========================
+   LOGO
+   ========================= */
 
 .logo {
   display: flex;
@@ -27,15 +31,19 @@
   font-size: 18px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
+
+  white-space: nowrap;
 }
 
 .logo-icon {
   width: 28px;
   height: 28px;
 
+  flex-shrink: 0;
+
   border-radius: 50%;
 
-  background: #FFD54F;
+  background: #ffd54f;
 
   display: flex;
   align-items: center;
@@ -45,13 +53,17 @@
   font-size: 14px;
 }
 
-/* Links */
+/* =========================
+   LINKS
+   ========================= */
 
 .nav-links {
   display: flex;
-  margin-left: 700px;
+  align-items: center;
+
   gap: 38px;
-  
+
+  /* Removido o margin-left: 700px */
 }
 
 .nav-links a {
@@ -61,14 +73,16 @@
   font-size: 15px;
   font-weight: 500;
 
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
   color: #ff7854;
 }
 
-/* Botão */
+/* =========================
+   BOTÃO
+   ========================= */
 
 .btn-trip {
   border: none;
@@ -88,12 +102,131 @@
     #ff5b55
   );
 
-  transition: .3s;
+  transition: 0.3s;
 
-  margin-right: 200px;
+  /* Removido o margin-right: 200px */
 }
 
 .btn-trip:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 92, 92, .35);
+
+  box-shadow:
+    0 8px 25px rgba(255, 92, 92, 0.35);
+}
+
+
+/* ==================================================
+   TABLET
+   ================================================== */
+
+@media (max-width: 1000px) {
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .btn-trip {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+}
+
+
+/* ==================================================
+   CELULAR
+   ================================================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 70px;
+
+    padding: 0 20px;
+
+    background: rgba(20, 35, 32, 0.25);
+
+    backdrop-filter: blur(8px);
+  }
+
+  /* Esconde os links */
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Diminui o botão */
+
+  .btn-trip {
+    padding: 10px 16px;
+
+    font-size: 12px;
+
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .logo-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+
+/* ==================================================
+   CELULARES PEQUENOS
+   ================================================== */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    height: 65px;
+
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+
+    font-size: 12px;
+  }
+
+  .btn-trip {
+    padding: 9px 13px;
+
+    font-size: 11px;
+  }
+}
+
+
+/* ==================================================
+   TELAS MUITO PEQUENAS
+   ================================================== */
+
+@media (max-width: 360px) {
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .btn-trip {
+    padding: 8px 11px;
+
+    font-size: 10px;
+  }
 }
