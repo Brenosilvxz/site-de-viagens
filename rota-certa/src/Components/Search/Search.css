@@ -1,0 +1,134 @@
+.search {
+  position: absolute;
+  z-index: 1000;
+
+  top: 550px;
+  left: 70px;
+
+  display: flex;
+  align-items: center;
+
+  width: min(700px, calc(100% - 140px));
+  height: 55px;
+
+  padding: 5px;
+
+  background: white;
+  border-radius: 14px;
+
+  box-shadow: 0 5px 20px #0003;
+}
+
+.campo {
+  flex: 1;
+  min-width: 0;
+  padding: 0 18px;
+}
+
+.campo small {
+  display: block;
+  font-size: 8px;
+  font-weight: bold;
+  color: #777;
+}
+
+.campo input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.data {
+  border-left: 1px solid #ddd;
+}
+
+.search button {
+  width: 50px;
+  height: 45px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff6558;
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+  .search {
+    left: 6%;
+    width: 70%;
+  }
+}
+
+
+/* =========================
+   TABLET PEQUENO
+   ========================= */
+
+@media (max-width: 700px) {
+  .search {
+    top: 470px;
+    left: 20px;
+
+    width: calc(100% - 40px);
+    height: 52px;
+  }
+
+  .campo {
+    padding: 0 10px;
+  }
+
+  .campo small {
+    font-size: 7px;
+  }
+
+  .campo input {
+    font-size: 11px;
+  }
+
+  .search button {
+    width: 44px;
+    height: 42px;
+  }
+}
+
+
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 480px) {
+  .search {
+    top: 450px;
+    left: 15px;
+
+    width: calc(100% - 30px);
+    height: 50px;
+  }
+
+  .campo {
+    padding: 0 8px;
+  }
+
+  .campo small {
+    font-size: 6px;
+  }
+
+  .campo input {
+    font-size: 10px;
+  }
+
+  .search button {
+    width: 42px;
+    height: 40px;
+  }
+}
