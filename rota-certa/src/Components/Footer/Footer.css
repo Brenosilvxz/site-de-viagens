@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+
+  padding: 70px 5vw 25px;
+
+  background: #172520;
+
+  color: #f7f5ef;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.footer__container {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 70px;
+
+  padding-bottom: 60px;
+}
+
+/* =========================================
+   MARCA
+========================================= */
+
+.footer__marca {
+  max-width: 300px;
+}
+
+.footer__logo {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #ffd83d;
+
+  font-size: 24px;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.footer__marca p {
+  margin: 0 0 25px;
+
+  color: rgba(247, 245, 239, 0.85);
+
+  font-size: 17px;
+
+  line-height: 1.4;
+}
+
+.footer__frase {
+  color: #7fc9c5;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+/* =========================================
+   COLUNAS
+========================================= */
+
+.footer__coluna {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+.footer__coluna h3 {
+  margin: 0 0 10px;
+
+  color: #ffd83d;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.05em;
+}
+
+.footer__coluna span {
+  color: rgba(247, 245, 239, 0.65);
+
+  font-size: 11px;
+
+  line-height: 1.3;
+}
+
+/* =========================================
+   MENSAGEM
+========================================= */
+
+.footer__mensagem {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 45px 0;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__mensagem span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #ff6048;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.footer__mensagem h2 {
+  margin: 0;
+
+  color: #f7f5ef;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.8px;
+}
+
+/* =========================================
+   PARTE INFERIOR
+========================================= */
+
+.footer__bottom {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding-top: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.footer__bottom span {
+  color: rgba(247, 245, 239, 0.4);
+
+  font-size: 8px;
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 900px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px;
+  }
+
+  .footer__marca {
+    max-width: 100%;
+
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 55px 20px 25px;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px 25px;
+
+    padding-bottom: 45px;
+  }
+
+  .footer__marca {
+    grid-column: 1 / -1;
+  }
+
+  .footer__marca p {
+    font-size: 15px;
+  }
+
+  .footer__mensagem {
+    padding: 35px 0;
+  }
+
+  .footer__mensagem h2 {
+    font-size: 23px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
