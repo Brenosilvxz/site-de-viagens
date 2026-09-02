@@ -11,8 +11,6 @@
   color: #172520;
 
   font-family: Arial, Helvetica, sans-serif;
-
-  margin-top: -300px;
 }
 
 .banner__container {
@@ -244,7 +242,6 @@
     font-size: 32px;
   }
 }
-
 
 @media (max-width: 600px) {
   .banner {

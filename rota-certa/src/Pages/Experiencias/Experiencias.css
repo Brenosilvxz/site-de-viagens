@@ -1,0 +1,219 @@
+.Experiencias {
+  width: 100%;
+  padding: 80px 8%;
+  background: white;
+}
+
+.tituloExperiencias {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tituloExperiencias span {
+  color: #259cc0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.tituloExperiencias h1 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.tituloExperiencias p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* CARROSSEL */
+
+.carouselExperiencias {
+  position: relative;
+
+  height: 550px;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+
+.carouselExperiencias img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.infoExperiencia {
+  position: absolute;
+
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 40px;
+
+  color: white;
+
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.infoExperiencia h2 {
+  font-size: 36px;
+
+  margin-bottom: 10px;
+}
+
+.infoExperiencia p {
+  font-size: 18px;
+}
+
+.btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 25px;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+.dots {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.dots span {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #ccc;
+
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #259cc0;
+}
+
+.cardsExperiencias {
+  margin-top: 90px;
+}
+
+.cardsExperiencias h2 {
+  text-align: center;
+
+  font-size: 34px;
+
+  margin-bottom: 40px;
+}
+
+.gridExperiencias {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.cardExperiencia {
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  transition: 0.3s;
+}
+
+.cardExperiencia:hover {
+  transform: translateY(-8px);
+}
+
+.cardExperiencia img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.cardConteudo {
+  padding: 20px;
+}
+
+.cardConteudo span {
+  color: #259cc0;
+
+  font-weight: bold;
+
+  font-size: 13px;
+}
+
+.cardConteudo h3 {
+  font-size: 22px;
+
+  margin: 10px 0;
+}
+
+.cardConteudo p {
+  color: #666;
+
+  line-height: 1.5;
+}
+
+.detalhes {
+  margin-top: 20px;
+
+  border-top: 1px solid #eee;
+
+  padding-top: 15px;
+}
+
+.detalhes p {
+  margin: 8px 0;
+}
+
+@media (max-width: 1000px) {
+  .gridExperiencias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gridExperiencias {
+    grid-template-columns: 1fr;
+  }
+}

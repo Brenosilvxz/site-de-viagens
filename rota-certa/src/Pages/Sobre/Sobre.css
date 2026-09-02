@@ -1,0 +1,278 @@
+.Sobre {
+  background: #f5f7fa;
+
+  color: #1a1a1a;
+
+  overflow: hidden;
+
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.sobreHero {
+  height: 90vh;
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 10%;
+
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+}
+
+.sobreTexto {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 700px;
+}
+
+.sobreTexto span {
+  color: #259cc0;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.sobreTexto h1 {
+  color: white;
+
+  font-size: 60px;
+
+  line-height: 1.1;
+
+  margin: 20px 0;
+}
+
+.sobreTexto p {
+  color: #eeeeee;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+}
+
+.sobreTexto button {
+  margin-top: 30px;
+
+  padding: 15px 40px;
+
+  border-radius: 40px;
+
+  border: none;
+
+  background: #259cc0;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.sobreTexto button:hover {
+  background: #167d9c;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 30px rgba(37, 156, 192, 0.35);
+}
+
+/* ================= SEÇÕES ================= */
+
+.historia,
+.experiencia,
+.brasil {
+  width: 80%;
+
+  margin: 100px auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.historia img,
+.experiencia img,
+.brasil img {
+  width: 520px;
+
+  height: 360px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+  transition: 0.4s;
+}
+
+.historia img:hover,
+.experiencia img:hover,
+.brasil img:hover {
+  transform: scale(1.04);
+}
+
+.historia div,
+.experiencia div,
+.brasil div {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.historia div:hover,
+.experiencia div:hover,
+.brasil div:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 40px;
+
+  color: #222;
+}
+
+p {
+  color: #666;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+/* ================= CARDS NÚMEROS ================= */
+
+.numeros {
+  width: 80%;
+
+  margin: 100px auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.numeros div {
+  background: white;
+
+  padding: 45px 20px;
+
+  text-align: center;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+  transition: 0.35s;
+
+  border: 1px solid transparent;
+}
+
+.numeros div:hover {
+  transform: translateY(-12px);
+
+  border-color: #259cc0;
+
+  box-shadow: 0 20px 45px rgba(37, 156, 192, 0.25);
+}
+
+.numeros h2 {
+  color: #259cc0;
+
+  font-size: 50px;
+
+  margin: 0;
+}
+
+.numeros p {
+  color: #777;
+}
+
+/* ================= ANIMAÇÃO ================= */
+
+.historia,
+.experiencia,
+.brasil,
+.numeros {
+  animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1000px) {
+  .historia,
+  .experiencia,
+  .brasil {
+    width: 90%;
+
+    flex-direction: column;
+  }
+
+  .historia img,
+  .experiencia img,
+  .brasil img {
+    width: 100%;
+  }
+
+  .numeros {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobreTexto h1 {
+    font-size: 38px;
+  }
+
+  .sobreTexto p {
+    font-size: 16px;
+  }
+}

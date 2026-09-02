@@ -1,8 +1,5 @@
-import Home from "./Pages/Home/Home";
-
+import Router from "./Router";
 
 export default function App() {
-  return (
-      <Home />
-  );
+  return <Router />;
 }

@@ -1,0 +1,302 @@
+.Planejar {
+  background: #f5f7fa;
+
+  color: #222;
+
+  min-height: 100vh;
+
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.Planejar > img {
+  width: 100%;
+
+  height: 85vh;
+
+  object-fit: cover;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 0;
+
+  filter: brightness(0.55);
+}
+
+.planejarHero {
+  height: 85vh;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 10%;
+
+  z-index: 1;
+}
+
+.planejarTexto {
+  max-width: 750px;
+
+  color: white;
+}
+
+.planejarTexto span {
+  color: #259cc0;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.planejarTexto h1 {
+  font-size: 60px;
+
+  line-height: 1.1;
+
+  margin: 20px 0;
+}
+
+.planejarTexto p {
+  font-size: 20px;
+
+  color: #eee;
+
+  line-height: 1.7;
+}
+
+/* ================= FORMULÁRIO ================= */
+
+.formViagem {
+  width: 80%;
+
+  margin: -80px auto 100px;
+
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 30px;
+
+  position: relative;
+
+  z-index: 2;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.formViagem h2 {
+  text-align: center;
+
+  font-size: 35px;
+
+  margin-bottom: 35px;
+}
+
+.campos {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.campos label {
+  display: block;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.campos input,
+.campos select {
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  border: 1px solid #ddd;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.campos input:focus,
+.campos select:focus {
+  border-color: #259cc0;
+
+  box-shadow: 0 0 0 3px rgba(37, 156, 192, 0.15);
+}
+
+.formViagem button {
+  width: 100%;
+
+  margin-top: 35px;
+
+  padding: 17px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background: #259cc0;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.formViagem button:hover {
+  background: #167d9c;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 30px rgba(37, 156, 192, 0.35);
+}
+
+/* ================= ETAPAS ================= */
+
+.etapas {
+  width: 80%;
+
+  margin: 0 auto;
+
+  padding-bottom: 100px;
+}
+
+.etapas > h2 {
+  text-align: center;
+
+  font-size: 40px;
+
+  margin-bottom: 50px;
+}
+
+.cardsEtapas {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.35s;
+
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+
+  border-color: #259cc0;
+
+  box-shadow: 0 20px 40px rgba(37, 156, 192, 0.2);
+}
+
+.card h3 {
+  font-size: 50px;
+
+  color: #259cc0;
+
+  margin: 0 0 15px;
+}
+
+.card h4 {
+  font-size: 23px;
+
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+
+  line-height: 1.7;
+
+  font-size: 17px;
+}
+
+/* ================= ANIMAÇÕES ================= */
+
+.formViagem,
+.card {
+  animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1000px) {
+  .campos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardsEtapas {
+    grid-template-columns: 1fr;
+  }
+
+  .planejarTexto h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .campos {
+    grid-template-columns: 1fr;
+  }
+
+  .formViagem {
+    width: 90%;
+
+    padding: 30px;
+  }
+
+  .planejarHero {
+    padding: 0 6%;
+  }
+
+  .planejarTexto h1 {
+    font-size: 35px;
+  }
+}

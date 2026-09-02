@@ -1,0 +1,84 @@
+{
+  "destinos": [
+    {
+      "id": 1,
+      "nome": "Fernando de Noronha",
+      "estado": "PE",
+      "categoria": "Praia",
+      "imagem": "noronha.jpg",
+      "descricao": "Um paraíso brasileiro conhecido pelas águas cristalinas, praias e vida marinha."
+    },
+    {
+      "id": 2,
+      "nome": "Gramado",
+      "estado": "RS",
+      "categoria": "Serra",
+      "imagem": "gramado.jpg",
+      "descricao": "Cidade com arquitetura europeia, clima frio e atrações para toda família."
+    },
+    {
+      "id": 3,
+      "nome": "Maragogi",
+      "estado": "AL",
+      "categoria": "Praia",
+      "imagem": "maragogi.jpg",
+      "descricao": "Destino famoso pelas piscinas naturais e águas azul-turquesa."
+    },
+    {
+      "id": 4,
+      "nome": "Arraial do Cabo",
+      "estado": "RJ",
+      "categoria": "Praia",
+      "imagem": "arraial.jpg",
+      "descricao": "Conhecida como o Caribe Brasileiro, Arraial do Cabo possui praias de águas cristalinas, dunas e paisagens incríveis."
+    },
+    {
+      "id": 5,
+      "nome": "Bonito",
+      "estado": "MS",
+      "categoria": "Natureza",
+      "imagem": "bonito.jpg",
+      "descricao": "Destino de ecoturismo com rios cristalinos, cavernas e trilhas."
+    },
+    {
+      "id": 6,
+      "nome": "Lençóis Maranhenses",
+      "estado": "MA",
+      "categoria": "Natureza",
+      "imagem": "maranhao.jpg",
+      "descricao": "Parque nacional com dunas e lagoas naturais de águas claras."
+    },
+    {
+      "id": 7,
+      "nome": "Búzios",
+      "estado": "RJ",
+      "categoria": "Praia",
+      "imagem": "buzios.jpg",
+      "descricao": "Cidade litorânea com praias famosas e vida noturna."
+    },
+    {
+      "id": 8,
+      "nome": "Chapada Diamantina",
+      "estado": "BA",
+      "categoria": "Aventura",
+      "imagem": "d.jpg",
+      "descricao": "Região com cachoeiras, trilhas e paisagens naturais."
+    },
+    {
+      "id": 9,
+      "nome": "Foz do Iguaçu",
+      "estado": "PR",
+      "categoria": "Natureza",
+      "imagem": "foz.jpg",
+      "descricao": "Destino conhecido pelas Cataratas do Iguaçu."
+    },
+    {
+      "id": 10,
+      "nome": "Paraty",
+      "estado": "RJ",
+      "categoria": "Cultura",
+      "imagem": "paraty.jpg",
+      "descricao": "Cidade histórica com ruas de pedra, casarões coloniais, praias e belas paisagens naturais."
+    }
+  ]
+}

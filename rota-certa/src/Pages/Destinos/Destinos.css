@@ -1,0 +1,207 @@
+.Destinos {
+  width: 100%;
+  padding: 80px 8%;
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+
+/* TITULO */
+
+.titulo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo span {
+  color: #259cc0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.titulo h1 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.titulo p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* CARROSSEL */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 40px;
+
+  color: white;
+
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.info small {
+  font-size: 14px;
+  font-weight: bold;
+  color: #5ed8ff;
+}
+
+.info h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.btn {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 25px;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* BOLINHAS */
+
+.dots {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin: 25px 0 80px;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #ccc;
+
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #259cc0;
+}
+
+/* CARDS */
+
+.listaDestinos h2 {
+  text-align: center;
+
+  font-size: 32px;
+
+  margin-bottom: 40px;
+}
+
+.cardsDestinos {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.cardDestino {
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+  transition: 0.3s;
+}
+
+.cardDestino:hover {
+  transform: translateY(-10px);
+}
+
+.cardDestino img {
+  width: 100%;
+
+  height: 230px;
+
+  object-fit: cover;
+}
+
+.cardInfo {
+  padding: 25px;
+}
+
+.cardInfo small {
+  color: #259cc0;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.cardInfo h3 {
+  font-size: 25px;
+
+  margin: 12px 0;
+}
+
+.cardInfo p {
+  color: #666;
+
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .cardsDestinos {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    height: 400px;
+  }
+
+  .titulo h1 {
+    font-size: 32px;
+  }
+}

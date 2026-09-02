@@ -1,7 +1,7 @@
 import "./Cards.css";
 
-import maranhese from "../../assets/maranheses.jpg";
-import diamantina from "../../assets/chapada-diamantina.jpg";
+import maranhese from "../../assets/maranhao.jpg";
+import diamantina from "../../assets/d.jpg";
 import paraty from "../../assets/paraty.jpg";
 import { Link } from "react-router-dom";
 
@@ -10,29 +10,24 @@ export default function Cards() {
     <section className="destinos">
       <div className="destinos__topo">
         <div>
-          <span className="destinos__eyebrow">
-            ESCOLHAS DA ESTAÇÃO
-          </span>
+          <span className="destinos__eyebrow">ESCOLHAS DA ESTAÇÃO</span>
 
           <h1>Destinos que ficam na memória</h1>
         </div>
 
-        <Link to="/destinos" className="destinos__link">Ver todos os destinos</Link>
+        <Link to="/destinos" className="destinos__link">
+          Ver todos os destinos
+        </Link>
       </div>
 
       <div className="cards">
         {/* CARD 1 */}
         <article className="card">
-          <img
-            src={maranhese}
-            alt="Lençóis Maranhenses"
-          />
+          <img src={maranhese} alt="Lençóis Maranhenses" />
 
           <div className="card__degrade" />
 
-          <span className="card__regiao card__regiao--amarelo">
-            MARANHÃO
-          </span>
+          <span className="card__regiao card__regiao--amarelo">MARANHÃO</span>
 
           <div className="card__conteudo">
             <h2>Lençóis Maranhenses</h2>
@@ -40,22 +35,17 @@ export default function Cards() {
           </div>
 
           <button className="card__botao">
-           <Link to={maranhese}>↗</Link> 
+            <Link to={maranhese}>↗</Link>
           </button>
         </article>
 
         {/* CARD 2 */}
         <article className="card">
-          <img
-            src= {diamantina}
-            alt="Chapada Diamantina"
-          />
+          <img src={diamantina} alt="Chapada Diamantina" />
 
           <div className="card__degrade" />
 
-          <span className="card__regiao card__regiao--vermelho">
-            BAHIA
-          </span>
+          <span className="card__regiao card__regiao--vermelho">BAHIA</span>
 
           <div className="card__conteudo">
             <h2>Chapada Diamantina</h2>
@@ -63,22 +53,17 @@ export default function Cards() {
           </div>
 
           <button className="card__botao">
-            <Link to={diamantina}>↗</Link> 
+            <Link to={diamantina}>↗</Link>
           </button>
         </article>
 
         {/* CARD 3 */}
         <article className="card">
-          <img
-            src= {paraty}
-            alt="Paraty"
-          />
+          <img src={paraty} alt="Paraty" />
 
           <div className="card__degrade" />
 
-          <span className="card__regiao">
-            RIO DE JANEIRO
-          </span>
+          <span className="card__regiao">RIO DE JANEIRO</span>
 
           <div className="card__conteudo">
             <h2>Paraty</h2>
@@ -86,7 +71,7 @@ export default function Cards() {
           </div>
 
           <button className="card__botao">
-             <Link to={paraty}>↗</Link> 
+            <Link to={paraty}>↗</Link>
           </button>
         </article>
       </div>
