@@ -61,14 +61,17 @@
 .info small {
   font-size: 14px;
   font-weight: bold;
-  color: #5ed8ff;
+  color: #ff5b55;
 }
 
 .info h2 {
   font-size: 36px;
   margin: 10px 0;
+  color: white;
 }
-
+.info p {
+  color: white;
+}
 .btn {
   position: absolute;
 
