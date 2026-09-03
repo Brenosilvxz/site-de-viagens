@@ -11,7 +11,6 @@ export default function Header() {
       <div className="overlay"></div>
 
       {/* CONTEÚDO */}
-      <div className="info-icon">◎</div>
 
       <span>Sua próxima história começa aqui</span>
 

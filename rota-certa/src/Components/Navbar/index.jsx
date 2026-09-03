@@ -5,7 +5,7 @@ function Navbar() {
   const location = useLocation();
 
   const isWhitePage =
-    location.pathname === "/" || location.pathname === "/sobre";
+    location.pathname === "/" || location.pathname === "/sobre" || location.pathname === "/planejar";
 
   return (
     <header
