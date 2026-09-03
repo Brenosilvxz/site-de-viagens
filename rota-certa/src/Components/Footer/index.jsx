@@ -8,7 +8,7 @@ export default function Footer() {
         {/* MARCA */}
         <div className="footer__marca">
           <span className="footer__logo">
-            VIAJAR
+            ROTA CERTA
           </span>
 
           <p>

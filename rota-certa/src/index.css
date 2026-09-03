@@ -49,3 +49,21 @@ body {
 body {
   font-family: "Inter", sans-serif;
 }
+
+
+
+.navbar-white .logo {
+  color: white;
+}
+
+.navbar-white .nav-links a {
+  color: white;
+}
+
+.navbar-black .logo {
+  color: rgb(19, 18, 18);
+}
+
+.navbar-black .nav-links a {
+  color: rgb(5, 5, 5);
+}

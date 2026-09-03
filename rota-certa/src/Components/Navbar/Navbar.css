@@ -19,7 +19,8 @@
   display: flex;
   align-items: center;
 
-  background: transparent;
+  /* COR VISÍVEL EM TODAS AS TELAS */
+  /* background: rgb(249, 255, 254); */
 
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }

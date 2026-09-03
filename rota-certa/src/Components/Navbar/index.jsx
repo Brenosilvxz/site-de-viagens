@@ -1,9 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const location = useLocation();
+
+  const isWhitePage =
+    location.pathname === "/" || location.pathname === "/sobre";
+
   return (
-    <header className="navbar">
+    <header
+      className={`navbar ${isWhitePage ? "navbar-white" : "navbar-black"}`}
+    >
       {/* LOGO */}
       <Link to="/" className="logo">
         <div className="logo-icon">◎</div>
