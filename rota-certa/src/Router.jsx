@@ -7,6 +7,7 @@ import Sobre from "./Pages/Sobre";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Planejar from "./Pages/Planejar";
+import NotFound from "./Pages/NotFound";
 
 export default function Router() {
   return (
@@ -19,6 +20,8 @@ export default function Router() {
         <Route path="/experiencias" element={<Experiencias />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/planejar" element={<Planejar />} />
+        <Route path="/planejar" element={<Planejar />} />
+        <Route path="/*" element={<NotFound/>} />
       </Routes>
 
       <Footer />
