@@ -6,7 +6,17 @@
       "estado": "PE",
       "categoria": "Praia",
       "imagem": "noronha.jpg",
-      "descricao": "Um paraíso brasileiro conhecido pelas águas cristalinas, praias e vida marinha."
+      "descricao": "Um paraíso brasileiro conhecido pelas águas cristalinas, praias e vida marinha.",
+      "comentarios": [
+        {
+          "nome": "João",
+          "comentario": "Lugar incrível! As praias são lindas."
+        },
+        {
+          "nome": "Maria",
+          "comentario": "Um dos lugares mais bonitos que já visitei."
+        }
+      ]
     },
     {
       "id": 2,
@@ -14,7 +24,17 @@
       "estado": "RS",
       "categoria": "Serra",
       "imagem": "gramado.jpg",
-      "descricao": "Cidade com arquitetura europeia, clima frio e atrações para toda família."
+      "descricao": "Cidade com arquitetura europeia, clima frio e atrações para toda família.",
+      "comentarios": [
+        {
+          "nome": "Carlos",
+          "comentario": "Gramado é muito bonito e perfeito para viajar com a família."
+        },
+        {
+          "nome": "Ana",
+          "comentario": "Adorei o clima e as paisagens da cidade."
+        }
+      ]
     },
     {
       "id": 3,
@@ -22,7 +42,17 @@
       "estado": "AL",
       "categoria": "Praia",
       "imagem": "maragogi.jpg",
-      "descricao": "Destino famoso pelas piscinas naturais e águas azul-turquesa."
+      "descricao": "Destino famoso pelas piscinas naturais e águas azul-turquesa.",
+      "comentarios": [
+        {
+          "nome": "Pedro",
+          "comentario": "As piscinas naturais são maravilhosas!"
+        },
+        {
+          "nome": "Julia",
+          "comentario": "A água é muito bonita e cristalina."
+        }
+      ]
     },
     {
       "id": 4,
@@ -30,7 +60,17 @@
       "estado": "RJ",
       "categoria": "Praia",
       "imagem": "arraial.jpg",
-      "descricao": "Conhecida como o Caribe Brasileiro, Arraial do Cabo possui praias de águas cristalinas, dunas e paisagens incríveis."
+      "descricao": "Conhecida como o Caribe Brasileiro, Arraial do Cabo possui praias de águas cristalinas, dunas e paisagens incríveis.",
+      "comentarios": [
+        {
+          "nome": "Lucas",
+          "comentario": "Realmente parece o Caribe! As praias são incríveis."
+        },
+        {
+          "nome": "Beatriz",
+          "comentario": "A paisagem é linda e vale muito a pena conhecer."
+        }
+      ]
     },
     {
       "id": 5,
@@ -38,7 +78,17 @@
       "estado": "MS",
       "categoria": "Natureza",
       "imagem": "bonito.jpg",
-      "descricao": "Destino de ecoturismo com rios cristalinos, cavernas e trilhas."
+      "descricao": "Destino de ecoturismo com rios cristalinos, cavernas e trilhas.",
+      "comentarios": [
+        {
+          "nome": "Rafael",
+          "comentario": "Um destino perfeito para quem gosta de natureza."
+        },
+        {
+          "nome": "Camila",
+          "comentario": "Os rios são extremamente bonitos e transparentes."
+        }
+      ]
     },
     {
       "id": 6,
@@ -46,7 +96,17 @@
       "estado": "MA",
       "categoria": "Natureza",
       "imagem": "maranhao.jpg",
-      "descricao": "Parque nacional com dunas e lagoas naturais de águas claras."
+      "descricao": "Parque nacional com dunas e lagoas naturais de águas claras.",
+      "comentarios": [
+        {
+          "nome": "Fernanda",
+          "comentario": "As dunas e lagoas formam uma paisagem incrível."
+        },
+        {
+          "nome": "Gabriel",
+          "comentario": "Um dos lugares mais impressionantes do Brasil."
+        }
+      ]
     },
     {
       "id": 7,
@@ -54,7 +114,17 @@
       "estado": "RJ",
       "categoria": "Praia",
       "imagem": "buzios.jpg",
-      "descricao": "Cidade litorânea com praias famosas e vida noturna."
+      "descricao": "Cidade litorânea com praias famosas e vida noturna.",
+      "comentarios": [
+        {
+          "nome": "Marcos",
+          "comentario": "Búzios tem praias lindas e ótimos restaurantes."
+        },
+        {
+          "nome": "Larissa",
+          "comentario": "Adorei a cidade e a vida noturna."
+        }
+      ]
     },
     {
       "id": 8,
@@ -62,7 +132,17 @@
       "estado": "BA",
       "categoria": "Aventura",
       "imagem": "d.jpg",
-      "descricao": "Região com cachoeiras, trilhas e paisagens naturais."
+      "descricao": "Região com cachoeiras, trilhas e paisagens naturais.",
+      "comentarios": [
+        {
+          "nome": "Thiago",
+          "comentario": "As trilhas são incríveis e as cachoeiras são lindas."
+        },
+        {
+          "nome": "Amanda",
+          "comentario": "Perfeito para quem gosta de aventura e natureza."
+        }
+      ]
     },
     {
       "id": 9,
@@ -70,7 +150,17 @@
       "estado": "PR",
       "categoria": "Natureza",
       "imagem": "foz.jpg",
-      "descricao": "Destino conhecido pelas Cataratas do Iguaçu."
+      "descricao": "Destino conhecido pelas Cataratas do Iguaçu.",
+      "comentarios": [
+        {
+          "nome": "Bruno",
+          "comentario": "As Cataratas são simplesmente impressionantes."
+        },
+        {
+          "nome": "Isabela",
+          "comentario": "Foi uma das melhores viagens que já fiz."
+        }
+      ]
     },
     {
       "id": 10,
@@ -78,7 +168,17 @@
       "estado": "RJ",
       "categoria": "Cultura",
       "imagem": "paraty.jpg",
-      "descricao": "Cidade histórica com ruas de pedra, casarões coloniais, praias e belas paisagens naturais."
+      "descricao": "Cidade histórica com ruas de pedra, casarões coloniais, praias e belas paisagens naturais.",
+      "comentarios": [
+        {
+          "nome": "Renato",
+          "comentario": "A cidade histórica é muito bonita e charmosa."
+        },
+        {
+          "nome": "Sofia",
+          "comentario": "Adorei as ruas de pedra e as praias."
+        }
+      ]
     }
   ]
 }

@@ -18,23 +18,14 @@ export default function Destinos() {
   // Caminho das imagens
   const imagens = {
     "gramado.jpg": gramado,
-
     "arraial.jpg": arraial,
-
     "maragogi.jpg": maragogi,
-
     "noronha.jpg": noronha,
-
     "bonito.jpg": bonito,
-
     "maranhao.jpg": maranhese,
-
     "buzios.jpg": buzios,
-
     "d.jpg": diamantina,
-
     "paraty.jpg": paraty,
-
     "foz.jpg": foz,
   };
 
@@ -45,7 +36,6 @@ export default function Destinos() {
   useEffect(() => {
     fetch("http://localhost:3000/destinos")
       .then((res) => res.json())
-
       .then((dados) => {
         setDestinos(dados);
       });
@@ -97,6 +87,23 @@ export default function Destinos() {
           <h2>{destaques[index].nome}</h2>
 
           <p>{destaques[index].descricao}</p>
+
+          {/* COMENTÁRIOS DO DESTINO */}
+          <div className="comentarios">
+            <h3>Comentários</h3>
+
+            {destaques[index].comentarios &&
+            destaques[index].comentarios.length > 0 ? (
+              destaques[index].comentarios.map((comentario, i) => (
+                <div className="comentario" key={i}>
+                  <strong>{comentario.nome}</strong>
+                  <p>{comentario.comentario}</p>
+                </div>
+              ))
+            ) : (
+              <p>Nenhum comentário ainda.</p>
+            )}
+          </div>
         </div>
 
         <button className="btn right" onClick={proximo}>
@@ -124,7 +131,10 @@ export default function Destinos() {
         <div className="cardsDestinos">
           {destinos.map((destino) => (
             <div className="cardDestino" key={destino.id}>
-              <img src={imagens[destino.imagem]} alt={destino.nome} />
+              <img
+                src={imagens[destino.imagem]}
+                alt={destino.nome}
+              />
 
               <div className="cardInfo">
                 <small>{destino.estado}</small>
@@ -132,6 +142,24 @@ export default function Destinos() {
                 <h3>{destino.nome}</h3>
 
                 <p>{destino.descricao}</p>
+
+                {/* COMENTÁRIOS DO CARD */}
+                <div className="comentarios">
+                  <h4>Comentários</h4>
+
+                  {destino.comentarios &&
+                  destino.comentarios.length > 0 ? (
+                    destino.comentarios.map((comentario, i) => (
+                      <div className="comentario" key={i}>
+                        <strong>{comentario.nome}</strong>
+
+                        <p>{comentario.comentario}</p>
+                      </div>
+                    ))
+                  ) : (
+                    <p>Nenhum comentário ainda.</p>
+                  )}
+                </div>
               </div>
             </div>
           ))}
